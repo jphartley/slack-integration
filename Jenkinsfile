@@ -17,10 +17,9 @@ pipeline {//1
                // sh 'mvn --show-version --batch-mode --errors --no-transfer-progress -Dmaven.test.failure.ignore=true -Dspotbugs.failOnError=false  clean verify'
                // junit '**/target/surefire-reports/TEST-*.xml'
                // recordIssues(tool: spotBugs(), qualityGates: [[threshold: 1, type: 'TOTAL', unstable: true]])
-               step{
-                echo "Helo " $PATH
+                echo 'Helo " $PATH'
                 sh 'ls -ls'
-               }
+
             }//4
         }//3
     }//2
