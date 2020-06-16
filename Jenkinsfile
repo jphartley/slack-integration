@@ -17,6 +17,7 @@ pipeline {//1
                // junit '**/target/surefire-reports/TEST-*.xml'
                // recordIssues(tool: spotBugs(), qualityGates: [[threshold: 1, type: 'TOTAL', unstable: true]])
                echo "Helo"
+               sh "ls -ls"
             }//4
         }//3
     }//2
