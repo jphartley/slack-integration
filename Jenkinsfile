@@ -17,7 +17,7 @@ pipeline {
                  junit '**/target/surefire-reports/TEST-*.xml'
                     recordIssues(
                            tool: spotBugs(), qualityGates: [[threshold: 1, type: 'TOTAL', unstable: true]]
-                }
+                    )
             }
         }
     }
