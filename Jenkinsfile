@@ -3,7 +3,7 @@ pipeline {//1
 
     stages {//2
         stage("build"){//3
-            agent any
+            agent none
             steps{//4
                echo '[simulate] mvn --show-version --batch-mode --errors --no-transfer-progress -Dmaven.test.failure.ignore=true -Dspotbugs.failOnError=false  clean verify'
                script {
