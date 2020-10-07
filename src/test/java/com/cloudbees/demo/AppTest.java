@@ -11,6 +11,7 @@ public class AppTest {
         App app = new App();
         app.doSomething();
         //fail();
-        assertTrue(true);
+        //assertTrue(true);
+        fail();
     }
 }
