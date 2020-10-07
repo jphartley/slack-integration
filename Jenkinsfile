@@ -1,14 +1,7 @@
 pipeline {
 
     agent none
-    environment {
-            // tools
-            MAVEN_TOOL = "maven3"
-        }
 
-      tools {
-            maven MAVEN_TOOL
-        }
     stages {
         stage("build"){
             agent any
